@@ -1,9 +1,10 @@
+import { BlogPost } from "@/types";
 import Image from "next/image";
 import Link from "next/link";
 import { AiFillLike } from "react-icons/ai";
 import { FaCalendar } from "react-icons/fa";
 
-const BlogCard = ({ blog }) => {
+const BlogCard = ({ blog }:{blog:BlogPost}) => {
   return (
     <div className="card w-full bg-base-100 shadow-xl">
       <figure>
@@ -37,7 +38,7 @@ const BlogCard = ({ blog }) => {
           <div className="avatar items-center">
             <div className="w-8 mr-1 rounded-full">
               <Image
-                src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
+                src="https://www.insights.onegiantleap.com/content/images/2023/10/Content-Hub-Blog---The-rise-of-quantum-computing.png"
                 width={100}
                 height={100}
                 alt="author image"
